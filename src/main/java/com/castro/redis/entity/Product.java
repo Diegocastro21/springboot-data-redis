@@ -13,8 +13,6 @@ import java.io.Serializable;
 @NoArgsConstructor
 @RedisHash("Product")
 public class Product implements Serializable {
-
-
     @Id
     private int id;
     private String name;

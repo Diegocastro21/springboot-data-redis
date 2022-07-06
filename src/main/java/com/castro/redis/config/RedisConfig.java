@@ -15,7 +15,7 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 public class RedisConfig {
 
     @Bean
-    public JedisConnectionFactory connectionnFactory(){
+    public JedisConnectionFactory connectionnFactory() {
         RedisStandaloneConfiguration configuration = new RedisStandaloneConfiguration();
 
         configuration.setHostName("localhost");
@@ -24,7 +24,7 @@ public class RedisConfig {
     }
 
     @Bean
-    public RedisTemplate<String, Object> redisTemplate(){
+    public RedisTemplate<String, Object> redisTemplate() {
 
         RedisTemplate<String, Object> template = new RedisTemplate<>();
 
@@ -37,5 +37,4 @@ public class RedisConfig {
         template.afterPropertiesSet();
         return template;
     }
-
 }

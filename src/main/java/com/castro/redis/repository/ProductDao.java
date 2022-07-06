@@ -9,7 +9,6 @@ import java.util.List;
 
 @Repository
 public class ProductDao {
-
     public static final String HASH_KEY = "Product";
     @Autowired
     private RedisTemplate template;

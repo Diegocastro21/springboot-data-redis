@@ -21,8 +21,6 @@ public class SpringDataRedisApplication {
     public Product save(@RequestBody Product product) {
         return dao.save(product);
     }
-
-
     @GetMapping
     public List<Product> getAllProducts() {
         return dao.findAll();
